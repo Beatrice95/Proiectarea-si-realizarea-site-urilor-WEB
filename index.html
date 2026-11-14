@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Postări</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Postări</h1>
+  </header>
+
+  <main>
+    <section class="panou-continut">
+      <h2>Postare nouă</h2>
+      <form id="formular-postare">
+        <label for="titlu-postare">Titlu</label>
+        <input type="text" id="titlu-postare" name="title" required minlength="3">
+
+        <label for="continut-postare">Conținut</label>
+        <textarea id="continut-postare" name="body" rows="3" required></textarea>
+
+        <label for="id-utilizator">ID utilizator</label>
+        <input type="number" id="id-utilizator" name="userId" required min="1" value="1">
+
+        <button type="submit">Adaugă</button>
+        <p id="mesaj-formular" class="mesaj"></p>
+      </form>
+    </section>
+
+    <section class="panou-continut">
+      <h2>Lista</h2>
+      <p id="mesaj-status-lista" class="mesaj"></p>
+      <ul id="lista-postari"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Temă Backend Development</p>
+  </footer>
+</body>
+</html>

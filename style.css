@@ -1,0 +1,107 @@
+.panou-continut {
+  width: 500px;
+  padding: 500px;
+  border: 2px solid black;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  background: #f5f5f5;
+  color: #222;
+}
+
+header,
+footer {
+  background: #2c3e50;
+  color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+h1 {
+ margin-top: 0;
+ margin-right: 0;
+ margin-bottom: 0;
+ margin-left: 0; 
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.panou-continut {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 8px;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#lista-postari {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-postari li {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+}
+
+#lista-postari h3 {
+  margin: 0 0 6px;
+}
+
+.buton-stergere {
+  width: auto;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.mesaj {
+  margin: 4px 0;
+}
+
+.eroare {
+  color: #c0392b;
+}
+
+.succes {
+  color: #27ae60;
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+    padding: 8px;
+  }
+}
