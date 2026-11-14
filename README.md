@@ -1,6 +1,6 @@
 # Mini-frontend pentru API
 - **URL API:** https://jsonplaceholder.typicode.com/posts (GET listă, POST creare, DELETE ștergere)
-- **Link live:** https://<user>.github.io/<repo>/ (de completat după publicarea pe GitHub Pages)
+- **Link live:** https://github.com/Beatrice95/Proiectarea-si-realizarea-site-urilor-WEB 
 - **CORS:** rezolvat prin header pe server: JSONPlaceholder răspunde cu `Access-Control-Allow-Origin: *`, deci browserul permite cererile de pe GitHub Pages.
 - **Status codes tratate** (verific mereu `raspunsServer.ok`):
   - `200` la GET: randez lista; la DELETE: scot elementul din listă.
